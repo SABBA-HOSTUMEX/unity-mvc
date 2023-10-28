@@ -22,4 +22,15 @@ public class controller : MonoBehaviour
             playerView.UpdateHealth(playerModel.Health);
         }
     }
+    public void healthinc()
+    {
+        playerModel.Health += 10;
+        playerView.UpdateHealth(playerModel.Health);
+    }
+    public void healthdec()
+    {
+        playerModel.Health -= 10;
+        playerView.UpdateHealth(playerModel.Health);
+    }
+    
 }
